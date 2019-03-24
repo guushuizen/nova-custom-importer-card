@@ -1,9 +1,11 @@
 {
-    "name": "GuusH/NovaImporter",
-    "description": "A Laravel Nova card.",
+    "name": "guushuizen/nova-importer",
+    "description": "Allows developers to create custom import functionality for their Nova resources",
     "keywords": [
         "laravel",
-        "nova"
+        "nova",
+        "import",
+        "card"
     ],
     "license": "MIT",
     "require": {
