@@ -8,12 +8,13 @@ class NovaImporter extends Card
 {
 	protected $resource;
 
-	public function __construct($resource) {
+	public function __construct($resource, $accept) {
 		parent::__construct();
 
 		$this->resource = $resource;
 
 		$this->withMeta([
+			'accept' => $accept,
 			'uploadTitle' => $resource::$uploadTitle,
 			'resourceLabel' => $resource::label(),
 			'resourceSlug' => $resource::uriKey(),

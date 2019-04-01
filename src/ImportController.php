@@ -17,6 +17,6 @@ class ImportController {
 			'file' => 'required|file',
 		])->validate();
 
-		return $importer->handle($data('file'));
+		return $importer->handle($data['file']);
 	}
 }

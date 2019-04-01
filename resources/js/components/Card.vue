@@ -1,7 +1,7 @@
 <template>
     <card class="flex flex-col items-center justify-center">
         <p class="text-lg font-bold self-start pl-2 ">{{ card.uploadTitle }}</p>
-        <input class="hidden" type="file" required @change="change" ref="xmlUpload"/>
+        <input class="hidden" type="file" required @change="change" ref="xmlUpload" :accept="card.accept"/>
         <div class="mt-4 flex justify-between items-center ">
             <a class="btn btn-default btn-primary" @click="clickUpload">
                 {{ this.card.choose_button_text }}
@@ -70,7 +70,7 @@
                     }
                 }).finally(() => {
                     this.$refs.xmlUpload.value = "";
-                    this.fileName = this.card.begin_upload;
+                    this.fileName = this.card.not_chosen;
                 });
 
                 //     axios({
