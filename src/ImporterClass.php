@@ -2,12 +2,14 @@
 
 namespace GuusH\NovaImporter;
 
+use Illuminate\Http\UploadedFile;
+
 abstract class ImporterClass {
 
 	/**
 	 * Handle incoming data for import function.
 	 *
-	 * @param string $data
+	 * @param UploadedFile
 	 * @return mixed
 	 */
 	public abstract function handle($data);

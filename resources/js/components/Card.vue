@@ -1,7 +1,7 @@
 <template>
     <card class="flex flex-col items-center justify-center">
         <p class="text-lg font-bold self-start pl-2 ">{{ card.uploadTitle }}</p>
-        <input class="hidden" type="file" required @change="change" ref="xmlUpload" accept=".xml"/>
+        <input class="hidden" type="file" required @change="change" ref="xmlUpload"/>
         <div class="mt-4 flex justify-between items-center ">
             <a class="btn btn-default btn-primary" @click="clickUpload">
                 {{ this.card.choose_button_text }}

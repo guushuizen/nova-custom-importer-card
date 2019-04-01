@@ -17,9 +17,9 @@ class NovaImporter extends Card
 			'uploadTitle' => $resource::$uploadTitle,
 			'resourceLabel' => $resource::label(),
 			'resourceSlug' => $resource::uriKey(),
-			'choose_button_text' => config('nova-importer.choose_button_text'),
-			'not_chosen' => config('nova-importer.not_chosen'),
-			'begin_upload' => config('nova-importer.begin_upload')
+			'choose_button_text' => config('nova-importer.choose_button_text', "Choose file"),
+			'not_chosen' => config('nova-importer.not_chosen', "No file selected"),
+			'begin_upload' => config('nova-importer.begin_upload', "Upload")
 		]);
 	}
 
